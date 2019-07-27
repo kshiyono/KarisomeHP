@@ -1,0 +1,64 @@
+.container{
+  width: 750px;
+  text-align: center;
+  margin: auto;
+}
+header{
+  margin-top: 15px;
+}
+
+.logo{
+  font-size: 50px;
+  font-family: 'Andale Mono','Courier','Hannotate SC',sans-serif;
+  letter-spacing: 0.1em;
+}
+.catchcopy{
+  font-size: 10px;
+  color: #696969;
+  margin-bottom: 20px;
+}
+header a{
+  display: inline-block;
+  text-decoration: none;
+  color: #696969;
+  margin: 15px 15px 30px 15px ;
+  font-family: 'Meiryo UI','klee','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Helvetica Neue','Arial',sans-serif;
+}
+header a:hover{
+  color: #696969;
+  opacity: 0.5;
+  border-bottom: 5px;
+}
+/*font 直す*/
+.consept{
+  font-family: 'Meiryo UI','klee','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Helvetica Neue','Arial',sans-serif;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+}
+
+/*フッター*/
+footer h1{
+  font-size: 20px;
+  font-family: 'Andale Mono','Courier','Hannotate SC',sans-serif;
+  letter-spacing: 0.1em;
+  float: left;
+  margin-left: 15px;
+}
+.fab{
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.my-blue{
+  color: #a9a9a9;
+}
+.foot-line{
+  margin-top: 40px;
+}
+.cancel{
+  clear: both;
+}
+.copyright{
+  font-size: 5px;
+  float:left;
+}

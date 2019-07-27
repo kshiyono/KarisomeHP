@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>karisome</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style type="text/css">
+#photo {
+    width: 750px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo img {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+</style>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var setImg = '#photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">karisome</h1>
+      <p class="catchcopy">その場の想い、ご縁を大切にします。</p>
+  <header>
+      <a href="home.html">home</a>
+      <a href="news.html">news</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="member.html">member</a>
+      <a href="contact.html">contact</a>
+  </header>
+  <div id="photo">
+  <img src="img/UNADJUSTEDNONRAW_thumb_17.jpg" width="750" height="500" alt="">
+  <img src="img/UNADJUSTEDNONRAW_thumb_18.jpg" width="750" height="500" alt="">
+  </div>
+  <br>
+    <p class="consept">ホームページ製作のご依頼ご相談をお受けしています。<br>
+      ビジネスの成功も視野に入れながら、<br>
+      ご依頼者の希望と想いを大切にした丁寧な制作を行なっていきます。<br>
+      些細なことでも遠慮なく<span class="consept-contact"><a href="contact.html">お問い合わせ</a></span>頂けると幸いです。</p>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+    <hr class="foot-line">
+    <h1 class="foot-logo">karisome</h1>
+    <a href="https://twitter.com/karisome223" target="_blank"><i class="fab fa-twitter-square my-blue fa-2x"></i></a>
+    <br class="cancel">
+    <small class="copyright">Copyright © karisome, All rights reserved.</small>
+    <br>
+    <br>
+    </div>
+  </footer>
+</html>
